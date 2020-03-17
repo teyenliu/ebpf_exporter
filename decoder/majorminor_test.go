@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cloudflare/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/config"
 )
 
 func TestMajorMinorDecoder(t *testing.T) {

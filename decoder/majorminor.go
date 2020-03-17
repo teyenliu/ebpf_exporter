@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudflare/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/config"
 	"github.com/iovisor/gobpf/bcc"
 	"golang.org/x/sys/unix"
 )

@@ -1,6 +1,6 @@
 # ebpf_exporter
 
-[![Build Status](https://travis-ci.org/cloudflare/ebpf_exporter.svg?branch=master)](https://travis-ci.org/cloudflare/ebpf_exporter)
+[![Build Status](https://travis-ci.org/teyenliu/ebpf_exporter.svg?branch=master)](https://travis-ci.org/teyenliu/ebpf_exporter)
 
 Prometheus exporter for custom eBPF metrics.
 
@@ -31,7 +31,7 @@ To build, you need to have `libbcc` installed:
 
 You can use pre-compiled binary from Releases:
 
-* https://github.com/cloudflare/ebpf_exporter/releases
+* https://github.com/teyenliu/ebpf_exporter/releases
 
 That still requires you to have `libbcc`. To build release binaries yourself:
 
@@ -42,13 +42,13 @@ $ make release-binaries
 To build a package from latest sources:
 
 ```
-$ go get -u -v github.com/cloudflare/ebpf_exporter/...
+$ go get -u -v github.com/teyenliu/ebpf_exporter/...
 ```
 
 To run with [`bio`](examples/bio.yaml) config (you need `root` privileges):
 
 ```
-$ ~/go/bin/ebpf_exporter --config.file=src/github.com/cloudflare/ebpf_exporter/examples/bio.yaml
+$ ~/go/bin/ebpf_exporter --config.file=src/github.com/teyenliu/ebpf_exporter/examples/bio.yaml
 ```
 
 If you pass `--debug`, you can see raw tables at `/tables` endpoint.

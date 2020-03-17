@@ -25,12 +25,12 @@ with turbo disabled for stable measurements we see the following numbers:
 $ sudo GOMAXPROCS=1 GOPATH=$GOPATH taskset -c 30 go test -bench .
 goos: linux
 goarch: amd64
-pkg: github.com/cloudflare/ebpf_exporter/benchmark
+pkg: github.com/teyenliu/ebpf_exporter/benchmark
 BenchmarkGetpid               	 5000000	       316 ns/op
 BenchmarkGetpidWithSimpleMap  	 3000000	       424 ns/op
 BenchmarkGetpidWithComplexMap 	 2000000	       647 ns/op
 PASS
-ok  	github.com/cloudflare/ebpf_exporter/benchmark	7.328s
+ok  	github.com/teyenliu/ebpf_exporter/benchmark	7.328s
 ```
 
 | Case     | ns/op | overhead ns/op | ops/s     | overhead percent |

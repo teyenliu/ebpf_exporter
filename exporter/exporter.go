@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/cloudflare/ebpf_exporter/config"
-	"github.com/cloudflare/ebpf_exporter/decoder"
 	"github.com/iovisor/gobpf/bcc"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/teyenliu/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/decoder"
 )
 
 // Namespace to use for all metrics
@@ -30,14 +30,14 @@ type Exporter struct {
 // New creates a new exporter with the provided config
 func New(config config.Config) *Exporter {
 	enabledProgramsDesc := prometheus.NewDesc(
-		prometheus.BuildFQName(prometheusNamespace, "", "enabled_programs"),
+		prometheus.BuildFQName(prometheusNamespace, "danny", "enabled_programs"),
 		"The set of enabled programs",
 		[]string{"name"},
 		nil,
 	)
 
 	programInfoDesc := prometheus.NewDesc(
-		prometheus.BuildFQName(prometheusNamespace, "", "ebpf_programs"),
+		prometheus.BuildFQName(prometheusNamespace, "danny", "ebpf_programs"),
 		"Info about ebpf programs",
 		[]string{"program", "function", "tag"},
 		nil,

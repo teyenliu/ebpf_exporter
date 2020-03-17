@@ -4,11 +4,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/cloudflare/ebpf_exporter/config"
-	"github.com/cloudflare/ebpf_exporter/exporter"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/version"
+	"github.com/teyenliu/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/exporter"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 	yaml "gopkg.in/yaml.v2"
 )

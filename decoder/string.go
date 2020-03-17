@@ -1,7 +1,7 @@
 package decoder
 
 import (
-	"github.com/cloudflare/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/config"
 )
 
 // String is a decoder that decodes strings coming from the kernel

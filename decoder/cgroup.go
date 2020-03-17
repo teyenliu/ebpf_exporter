@@ -8,7 +8,7 @@ import (
   "path/filepath"
 
   "golang.org/x/sys/unix"
-	"github.com/cloudflare/ebpf_exporter/config"
+	"github.com/teyenliu/ebpf_exporter/config"
   "github.com/iovisor/gobpf/bcc"
 )
 

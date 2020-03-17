@@ -7,7 +7,7 @@ RUN apt-get update && \
     echo "deb https://repo.iovisor.org/apt/xenial xenial main" > /etc/apt/sources.list.d/iovisor.list && \
     apt-get update && \
     apt-get install -y linux-headers-amd64 && \
-    curl -sL https://github.com/cloudflare/ebpf_exporter/files/3890546/libbcc_0.11.0-2_amd64.deb.gz | gunzip > /tmp/libbcc.deb && \
+    curl -sL https://github.com/teyenliu/ebpf_exporter/files/3890546/libbcc_0.11.0-2_amd64.deb.gz | gunzip > /tmp/libbcc.deb && \
     dpkg -i /tmp/libbcc.deb
 
 COPY ./ /go/ebpf_exporter
